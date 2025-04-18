@@ -50,7 +50,7 @@
 
     text {
       fill: #ff1493;
-      font-size: 7px; /* manja slova */
+      font-size: 10px; /* manja slova */
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -66,6 +66,30 @@
       margin-top: 40px;
       color: #c71585;
     }
+
+    video {
+      width: 90%;
+      max-width: 720px;
+      border: 5px solid #ff69b4;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff1493;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c71585;
+    }
   </style>
 </head>
 <body>
@@ -75,21 +99,37 @@
 
     <svg viewBox="-10 -10 120 120" preserveAspectRatio="xMidYMid meet">
       <defs>
-        <path id="circlePath" d="
-          M 50,50
-          m -45, 0
-          a 45,45 0 1,1 90,0
-          a 45,45 0 1,1 -90,0
-        " />
+        <path id="circlePath" d="M 50,50 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" />
       </defs>
       <text>
         <textPath href="#circlePath" startOffset="0%">
-        🍆🍆🍆🍆🍆🍌🍌🍌🍌🍌🍒🍒🍒🍒🍒 JA VOLIM MLADEŽ
+          060-3280-477 🍑🍑🍑 060-3280-477 🍒🍒🍒
+        </textPath>
       </text>
     </svg>
   </div>
 
-  <h1>JA SAM KIKICA, I VEOMA SAM MALA PIKICAAAAAAA!!! 🤩😋😋😋😋😋😋</h1>
+  <h1>Dolazim na kućnu adresu!!! 🤩😋😋😋😋😋😋</h1>
+
+  <!-- Video fajl sa YouTube-a -->
+  <video id="kikaVideo" src="kika-video.mp4" controls autoplay loop muted></video>
+
+  <!-- Dugme za puštanje zvuka -->
+  <div>
+    <button onclick="playSound()">🔊 Pusti zvuk</button>
+  </div>
+
+  <script>
+   function playSound() {
+  const video = document.getElementById('kikaVideo');
+  if (video.paused) {
+    video.play();
+  } else {
+    video.muted = false;  // Ovdje omogućavamo zvuk
+  }
+}
+
+  </script>
 
 </body>
 </html>
