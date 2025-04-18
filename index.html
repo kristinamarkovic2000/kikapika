@@ -5,28 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KIKA PIKAAAAAAA</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
+      padding: 20px;
       background-color: #fff0f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       font-family: 'Arial', sans-serif;
+      text-align: center;
     }
 
     .wrapper {
       position: relative;
-      width: 400px;
-      height: 400px;
+      width: 85vmin;
+      height: 85vmin;
+      max-width: 500px;
+      max-height: 500px;
+      margin: 0 auto;
     }
 
     .kika-img {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 250px;
-      height: 250px;
+      width: 75%;
+      height: 75%;
       border-radius: 50%;
       object-fit: cover;
       border: 6px solid #ff69b4;
@@ -38,23 +43,28 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 400px;
-      height: 400px;
-      transform: rotate(0deg);
+      width: 100%;
+      height: 100%;
       animation: rotate 10s linear infinite;
     }
 
     text {
       fill: #ff1493;
-      font-size: 22px;
+      font-size: 7px; /* manja slova */
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
     }
 
     @keyframes rotate {
       from { transform: rotate(0deg); }
       to   { transform: rotate(360deg); }
+    }
+
+    h1 {
+      font-size: clamp(1rem, 3vw, 1.8rem);
+      margin-top: 40px;
+      color: #c71585;
     }
   </style>
 </head>
@@ -63,22 +73,23 @@
   <div class="wrapper">
     <img src="kika.jpeg" alt="Kika" class="kika-img" />
 
-    <svg viewBox="0 0 400 400">
+    <svg viewBox="-10 -10 120 120" preserveAspectRatio="xMidYMid meet">
       <defs>
         <path id="circlePath" d="
-          M 200, 200
-          m -150, 0
-          a 150,150 0 1,1 300,0
-          a 150,150 0 1,1 -300,0
+          M 50,50
+          m -45, 0
+          a 45,45 0 1,1 90,0
+          a 45,45 0 1,1 -90,0
         " />
       </defs>
       <text>
         <textPath href="#circlePath" startOffset="0%">
-          KIKA PIKAAAAAAA • KIKA PIKAAAAAAA • KIKA PIKAAAAAAA •
-        </textPath>
+        🍆🍆🍆🍆🍆🍌🍌🍌🍌🍌🍒🍒🍒🍒🍒 JA VOLIM MLADEŽ
       </text>
     </svg>
   </div>
-<div><h1> JA SAM KIKICA, I VEOMA SAM MALA PIKICAAAAAAA!!! 🤩😋😋😋😋😋😋</h1><div>
+
+  <h1>JA SAM KIKICA, I VEOMA SAM MALA PIKICAAAAAAA!!! 🤩😋😋😋😋😋😋</h1>
+
 </body>
 </html>
