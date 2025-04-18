@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KIKA PIKAAAAAAA</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff0f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .wrapper {
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    .kika-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #ff69b4;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 400px;
+      height: 400px;
+      transform: rotate(0deg);
+      animation: rotate 10s linear infinite;
+    }
+
+    text {
+      fill: #ff1493;
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <img src="kika.jpeg" alt="Kika" class="kika-img" />
+
+    <svg viewBox="0 0 400 400">
+      <defs>
+        <path id="circlePath" d="
+          M 200, 200
+          m -150, 0
+          a 150,150 0 1,1 300,0
+          a 150,150 0 1,1 -300,0
+        " />
+      </defs>
+      <text>
+        <textPath href="#circlePath" startOffset="0%">
+          KIKA PIKAAAAAAA • KIKA PIKAAAAAAA • KIKA PIKAAAAAAA •
+        </textPath>
+      </text>
+    </svg>
+  </div>
+<div><h1> JA SAM KIKICA, I VEOMA SAM MALA PIKICAAAAAAA!!! 🤩😋😋😋😋😋😋</h1><div>
+</body>
+</html>
