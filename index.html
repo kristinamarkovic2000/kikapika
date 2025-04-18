@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KIKA PIKAAAAAAA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -50,7 +51,7 @@
 
     text {
       fill: #ff1493;
-      font-size: 10px; /* manja slova */
+      font-size: 10px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -62,14 +63,16 @@
     }
 
     h1 {
-      font-size: clamp(1rem, 3vw, 1.8rem);
+      font-family: 'Lobster', sans-serif;  /* Zavodljiv font */
+      font-size: clamp(2rem, 5vw, 3.5rem);  /* Povećana veličina fonta */
       margin-top: 40px;
       color: #c71585;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Efekat senke */
     }
 
     video {
-      width: 90%;
-      max-width: 720px;
+      width: 100%;  /* Povećana širina videa */
+      max-width: 900px;  /* Maksimalna širina */
       border: 5px solid #ff69b4;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -120,15 +123,14 @@
   </div>
 
   <script>
-   function playSound() {
-  const video = document.getElementById('kikaVideo');
-  if (video.paused) {
-    video.play();
-  } else {
-    video.muted = false;  // Ovdje omogućavamo zvuk
-  }
-}
-
+    function playSound() {
+      const video = document.getElementById('kikaVideo');
+      if (video.paused) {
+        video.play();
+      } else {
+        video.muted = false;  // Ovdje omogućavamo zvuk
+      }
+    }
   </script>
 
 </body>
